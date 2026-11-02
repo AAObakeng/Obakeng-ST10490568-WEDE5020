@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Enquiry | The Xperiment Digital Archive</title>
+    <meta name="description" content="Submit an enquiry about The Xperiment Digital Archive, collaborations, sponsorship and archive information.">
+
+    <link rel="stylesheet" href="css/Style.css">
+</head>
+
+<body>
+
+<center>
+
+    <h1>ENQUIRY FORM</h1>
+    <h3>THE XPERIMENT DIGITAL ARCHIVE</h3>
+
+    <hr width="80%">
+
+    <table class="navigation">
+
+            <tr>
+                <td>
+                    <a href="index.html">HOME</a>
+                </td>
+
+                <td>
+                    <a href="about.html">ABOUT</a>
+                </td>
+
+                <td>
+                    <a href="timeline.html">TIMELINE</a>
+                </td>
+
+                <td>
+                    <a href="media.html">MEDIA</a>
+                </td>
+
+                <td>
+                    <a href="gallery.html">GALLERY</a>
+                </td>
+
+                 <td>
+                    <a href="contact.html">CONTACT</a>
+                </td>
+
+                <td>
+                    <a href="enquiry.html">ENQUIRY</a>
+                </td>
+
+        </table>
+
+    <h2>SUBMIT AN ENQUIRY</h2>
+
+    <p>
+        Use this form to ask questions about the archive,
+        collaborations, sponsorship or volunteering.
+    </p>
+
+    <form id="enquiryForm" action="#" method="post" novalidate>
+
+        <label for="enquiryName">Full Name:</label><br>
+        <input type="text" id="enquiryName" required minlength="3">
+        <p id="enquiryNameError" class="form-error"></p>
+
+        <label for="enquiryEmail">Email Address:</label><br>
+        <input type="email" id="enquiryEmail" required>
+        <p id="enquiryEmailError" class="form-error"></p>
+
+        <label for="enquiryType">Enquiry Type:</label><br>
+
+        <select id="enquiryType" required>
+            <option value="">Select an enquiry type</option>
+            <option value="Archive information">Archive information</option>
+            <option value="Collaboration">Collaboration</option>
+            <option value="Sponsorship">Sponsorship</option>
+            <option value="Volunteering">Volunteering</option>
+            <option value="Other">Other</option>
+        </select>
+
+        <p id="enquiryTypeError" class="form-error"></p>
+
+        <label for="enquiryMessage">Your Enquiry:</label><br>
+        <textarea id="enquiryMessage" rows="6" required minlength="10"></textarea>
+        <p id="enquiryMessageError" class="form-error"></p>
+
+        <button type="submit">SUBMIT ENQUIRY</button>
+
+    </form>
+
+    <p id="enquiryResponse" aria-live="polite"></p>
+
+</center>
+
+<footer class="main-footer">
+    <p>The Xperiment Digital Archive | WEDE5020</p>
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

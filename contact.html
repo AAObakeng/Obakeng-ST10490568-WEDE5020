@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact | The Xperiment Digital Archive</title>
+    <meta name="description" content="Contact The Xperiment Digital Archive with questions, feedback and general messages.">
+
+    <link rel="stylesheet" href="css/Style.css">
+</head>
+
+<body>
+
+<center>
+
+    <h1>CONTACT US</h1>
+    <h3>THE XPERIMENT DIGITAL ARCHIVE</h3>
+
+    <hr width="80%">
+
+    <table class="navigation">
+
+            <tr>
+                <td>
+                    <a href="index.html">HOME</a>
+                </td>
+
+                <td>
+                    <a href="about.html">ABOUT</a>
+                </td>
+
+                <td>
+                    <a href="timeline.html">TIMELINE</a>
+                </td>
+
+                <td>
+                    <a href="media.html">MEDIA</a>
+                </td>
+
+                <td>
+                    <a href="gallery.html">GALLERY</a>
+                </td>
+
+                 <td>
+                    <a href="contact.html">CONTACT</a>
+                </td>
+
+                <td>
+                    <a href="enquiry.html">ENQUIRY</a>
+                </td>
+
+        </table>
+
+    <h2>SEND US A MESSAGE</h2>
+
+    <p>
+        Have a question, suggestion or feedback about the archive?
+        Complete the form below.
+    </p>
+
+    <form id="contactForm" action="#" method="post" novalidate>
+
+        <label for="contactName">Full Name:</label><br>
+        <input type="text" id="contactName" required minlength="3">
+        <p id="contactNameError" class="form-error"></p>
+
+        <label for="contactEmail">Email Address:</label><br>
+        <input type="email" id="contactEmail" required>
+        <p id="contactEmailError" class="form-error"></p>
+
+        <label for="messageType">Message Type:</label><br>
+
+        <select id="messageType" required>
+            <option value="">Select message type</option>
+            <option value="General question">General question</option>
+            <option value="Feedback">Feedback</option>
+            <option value="Website issue">Website issue</option>
+            <option value="Other">Other</option>
+        </select>
+
+        <p id="messageTypeError" class="form-error"></p>
+
+        <label for="contactMessage">Full Message:</label><br>
+        <textarea id="contactMessage" rows="6" required minlength="10"></textarea>
+        <p id="contactMessageError" class="form-error"></p>
+
+        <button type="submit">SEND MESSAGE</button>
+
+    </form>
+
+</center>
+
+<footer class="main-footer">
+    <p>The Xperiment Digital Archive | WEDE5020</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

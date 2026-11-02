@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Replace the URL below with the published GitHub Pages address before deployment.
+Sitemap: https://AAObakeng.github.io/xperiment-digital-archive/sitemap.xml
